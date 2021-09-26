@@ -71,7 +71,16 @@ a, a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("images/pattern-background-desktop.svg") no-repeat -50% -10%/contain;
+}
+#main_showcase .desktop_background {
+  position: absolute;
+  top: 0;
+  margin: 0 auto;
+  width: 100%;
+  z-index: -1;
+}
+#main_showcase .mobile_background {
+  display: none;
 }
 
 .card {
@@ -148,8 +157,8 @@ a, a:active {
     align-items: center;
   }
 
-  #main_showcase {
-    background: url("images/pattern-background-mobile.svg") no-repeat -50% -50%/cover;
+  .desktop_background {
+    display: none;
   }
 
   .card {

@@ -70,7 +70,7 @@ a, a:active {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("/images/pattern-background-desktop.svg") no-repeat -50% -10%/contain;
+  background: url("/app/images/pattern-background-desktop.svg") no-repeat -50% -10%/contain;
 }
 
 .card {

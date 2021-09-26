@@ -1,0 +1,193 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body {
+  background-color: #f5f7ff;
+}
+
+a, a:active {
+  color: #3829e0;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 2rem;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.attribution {
+  text-align: center;
+  padding: 1rem 0;
+  color: #7280a7;
+}
+.attribution a {
+  color: #3829e0;
+  text-decoration: none;
+}
+
+.btn_light, .btn_dark {
+  display: inline-block;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  height: 3.25rem;
+  width: 100%;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
+
+.btn_dark {
+  background-color: #3829e0;
+  color: #fff;
+  margin-bottom: 1.75rem;
+  box-shadow: 0 0.25rem 1.5rem rgba(56, 41, 224, 0.5);
+  transition: all 300ms ease-in-out;
+}
+.btn_dark:hover {
+  box-shadow: none;
+  background-color: #3225c1;
+}
+.btn_light {
+  background-color: #fff;
+  color: #7280a7;
+}
+
+#main_showcase {
+  height: 93vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("/app/images/pattern-background-desktop.svg") no-repeat -50% -10%/contain;
+}
+
+.card {
+  height: 43.5625rem;
+  width: 28.1875rem;
+  background-color: #fff;
+  border-radius: 1.25rem;
+  box-shadow: 0 0.25rem 2rem rgba(56, 41, 224, 0.2);
+  overflow: hidden;
+}
+.card > img {
+  height: 13.75rem;
+}
+.card_details {
+  padding: 3rem;
+  margin: 0 auto;
+  height: 29.8125rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.card_details .card_title {
+  font-size: 1.25rem;
+  font-weight: 900;
+  color: #1f2f56;
+  margin-bottom: 1.5rem;
+}
+.card_details .card_lead {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #7280a7;
+  width: 18.3125rem;
+  margin: 0 auto 1.625rem;
+  line-height: 1.6;
+}
+.card_details .plan_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0 1.5rem;
+  margin-bottom: 2rem;
+  height: 6.1875rem;
+  background-color: #f5f7ff;
+  border-radius: 0.5rem;
+}
+.card_details .plan_container > div {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+.card_details .plan_container > div img {
+  margin-right: 1.25rem;
+}
+.card_details .plan_container > div .plan_details_title, .card_details .plan_container > div .plan_details_amount, .card_details .plan_container > div .plan_details_switcher {
+  font-size: 0.875rem;
+}
+.card_details .plan_container > div .plan_details_title {
+  font-weight: 900;
+  color: #1f2f56;
+  margin-bottom: 0.35rem;
+}
+.card_details .plan_container > div .plan_details_amount {
+  color: #7280a7;
+}
+
+@media screen and (max-width: 425px) {
+  .container {
+    max-width: 375px;
+    padding: 1.125rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #main_showcase {
+    background: url("/app/images/pattern-background-mobile.svg") no-repeat -50% -50%/cover;
+  }
+
+  .card {
+    height: 35.5625rem;
+    width: 20.5625rem;
+  }
+  .card > img {
+    height: 10rem;
+  }
+  .card_details {
+    padding: 1.75rem;
+  }
+  .card_details .card_title {
+    margin-bottom: 1.15rem;
+  }
+  .card_details .card_lead {
+    margin: 0 auto 1.15rem;
+    width: 100%;
+  }
+  .card_details .plan_container {
+    height: 4.9375rem;
+  }
+  .card_details .plan_container .plan_details_title, .card_details .plan_container .plan_details_amount, .card_details .plan_container .plan_details_switcher {
+    font-size: 0.75rem;
+  }
+  .card_details .btn_dark {
+    margin-bottom: 1.15rem;
+    box-shadow: 0 0.1875rem 0.75rem rgba(56, 41, 224, 0.5);
+  }
+
+  .attribution {
+    padding: 0.15rem 0;
+    font-size: 0.75rem;
+    width: 50%;
+    margin: 0 auto;
+  }
+  .attribution a {
+    font-size: 0.75rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -11,7 +11,7 @@ html {
 }
 
 body {
-  background-color: #f5f7ff;
+  background-color: #e0e8ff;
 }
 
 a, a:active {
@@ -62,10 +62,11 @@ a, a:active {
 .btn_light {
   background-color: #fff;
   color: #7280a7;
+  height: auto;
 }
 
 #main_showcase {
-  height: 93vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
